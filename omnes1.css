@@ -1,0 +1,20 @@
+@font-face {
+    font-family: omnes;
+    src: url(fonts/omnes-semibold-italic_bigfontsite.com.otf) format('opentype');
+    font-weight: 600;
+    font-style: italic
+}
+
+@font-face {
+    font-family: omnes;
+    src: url(fonts/OmnesMedium-Roman.otf) format('opentype');
+    font-weight: 500;
+    font-style: normal
+}
+
+@font-face {
+    font-family: omnes;
+    src: url(fonts/omnes-medium-italic_bigfontsite.com.otf) format('opentype');
+    font-weight: 500;
+    font-style: italic
+}

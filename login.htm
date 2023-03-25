@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="cineworld.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap" rel="stylesheet">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="favicon.png">
+    <title>Cineworld - Login</title>
+
+</head>
+
+<body>
+    <div id="abv" style="
+    display: block;
+">
+        <div class="abv">
+            <div class="abv-content">
+                <div class="abv-routes" style="margin-top: 68.6406px;">
+                    <div class="header_container">
+                        <div class="header_wrapper noprint">
+                            <div class="header_content header_content-success"><button
+                                    aria-label="Go back to Cineworld.co.uk"><svg class="main-logo-only" width="157"
+                                        height="36" viewBox="0 0 157 36" fill="none">
+                                        <path
+                                            d="M16.5661 12.1855C16.5661 12.1855 20.1759 7.79874 21.6092 6.09277C22.0339 7.99371 22.8832 12.1368 22.8832 12.1368H29.8904C27.6608 13.6478 23.2548 16.6698 23.2548 16.6698C23.2548 16.6698 23.6264 22.7626 23.7857 24.8585C21.9277 23.6399 16.8847 20.2767 16.8847 20.2767C16.8847 20.2767 11.0984 23.1038 8.0726 24.6148C9.87748 21.9827 13.2218 17.1085 13.2218 17.1085C13.2218 17.1085 10.3552 13.6965 9.18738 12.2343L16.5661 12.1855ZM37.8 9.65094H25.4844C25.272 8.6761 23.2548 0 23.2548 0C23.2548 0 15.7168 9.16352 15.239 9.69969H3.45424C3.45424 9.69969 9.08121 16.7186 9.66514 17.4009C9.18738 18.1808 0.800003 31 0.800003 31C0.800003 31 15.3452 23.8349 16.1946 23.3962C16.9377 23.8836 27.0769 30.6588 27.0769 30.6588C27.0769 30.6588 26.3868 18.2296 26.3337 17.5472C26.9177 17.1572 37.8 9.65094 37.8 9.65094Z"
+                                            fill="#E32313"></path>
+                                        <path d="M135.8 9V28H138.8V9H138.578H135.8Z" fill="white"></path>
+                                        <path
+                                            d="M128.744 16.3782V15.3132H125.8V28H128.856V20.6843C128.856 19.6656 129.244 18.8785 130.022 18.3228C130.856 17.6746 132.078 17.3968 133.522 17.4431H133.8V15.0354H133.578C131.689 14.8502 129.911 15.4058 128.744 16.3782Z"
+                                            fill="white"></path>
+                                        <path
+                                            d="M106.44 15H103.818C103.818 15 101.402 22.7143 100.99 23.9048C100.63 22.6667 98.1625 15 98.1625 15H95.3861C95.3861 15 92.9183 22.7143 92.5584 23.9048C92.147 22.6667 89.7306 15 89.7306 15H86.8L91.1702 28H93.9465C93.9465 28 96.4144 20.1905 96.7743 18.9524C97.1856 20.1905 99.6021 28 99.6021 28H102.43L106.8 15H106.44Z"
+                                            fill="white"></path>
+                                        <path d="M53.4774 10H50.3161L49.8 13H53.3484L53.8 10H53.4774Z" fill="white">
+                                        </path>
+                                        <path
+                                            d="M62.5481 15C60.9478 15 59.5076 15.5107 58.3341 16.3464C58.3874 15.975 58.4941 15.325 58.4941 15.325H55.667L53.8 28H56.7338L57.854 20.2929C58.1207 18.575 59.881 17.2286 61.9613 17.2286C62.9215 17.2286 63.6683 17.4607 64.2017 17.925C64.7885 18.4821 65.0018 19.2714 64.8418 20.2464L63.7216 27.9536H66.6021L67.7223 20.3857C67.989 18.6679 67.5623 17.2286 66.5488 16.2536C65.5353 15.4643 64.2017 15 62.5481 15Z"
+                                            fill="white"></path>
+                                        <path d="M49.7444 15L47.8 28H50.8556L52.8 15H52.5222H49.7444Z" fill="white">
+                                        </path>
+                                        <path
+                                            d="M41.0965 17.3415C42.7856 17.3415 44.1052 18.1707 44.7386 19.5854L44.7913 19.7317H47.8L47.7472 19.4878C47.061 16.7073 44.633 15 41.3076 15C37.1905 15 33.3901 18.122 32.8623 21.9756C32.5983 23.878 33.179 25.6829 34.4986 27.0488C35.7126 28.3171 37.5072 29 39.4602 29C42.7328 29 45.6887 27.2927 47.061 24.561L47.2194 24.2683H44.1579L44.1052 24.3659C43.1023 25.7805 41.5188 26.6098 39.7769 26.6098C38.6157 26.6098 37.6128 26.2195 36.8738 25.439C36.0293 24.561 35.607 23.3415 35.8181 22.0244C36.1348 19.439 38.5101 17.3415 41.0965 17.3415Z"
+                                            fill="white"></path>
+                                        <path
+                                            d="M156.8 28.6482V9H156.539H153.925V16.5377C152.932 15.5327 151.26 14.5779 149.274 14.5779C145.093 14.5779 141.8 17.7437 141.8 21.8141C141.8 25.8342 145.093 29 149.274 29C151.364 29 153.037 27.995 154.03 26.9397V28.6482H156.8ZM154.03 21.7638C154.03 24.3769 151.835 26.5879 149.274 26.5879C146.661 26.5879 144.57 24.4271 144.57 21.7638C144.57 19.0503 146.661 16.8894 149.274 16.8894C151.887 16.8894 154.03 19.1005 154.03 21.7638Z"
+                                            fill="white"></path>
+                                        <path
+                                            d="M122.8 21.049C122.8 17.0839 119.496 14 115.3 14C111.104 14 107.8 17.0839 107.8 21.049C107.8 24.965 111.104 28 115.3 28C119.496 28 122.8 24.965 122.8 21.049ZM120.073 21C120.073 23.5944 117.922 25.6504 115.3 25.6504C112.678 25.6504 110.58 23.5455 110.58 21C110.58 18.3566 112.73 16.2028 115.3 16.2028C117.922 16.2517 120.073 18.3566 120.073 21Z"
+                                            fill="white"></path>
+                                        <path
+                                            d="M84.8 21.4615C84.8 19.6993 84.2274 18.1329 83.0823 16.958C81.8852 15.7343 80.1675 15 78.2416 15C74.1296 15 70.3819 18.1329 69.8614 22C69.6011 23.9091 70.1737 25.7203 71.475 27.042C72.7242 28.3147 74.546 29 76.576 29C79.9593 29 82.718 27.3846 84.1754 24.5455L84.3315 24.2517H81.3126L81.2605 24.3496C80.2716 25.8182 78.7621 26.6504 76.8883 26.6504C75.7431 26.6504 74.7021 26.2587 73.9214 25.5734C73.1406 24.8881 72.7762 23.9091 72.7242 22.8322H84.748V22.6364C84.8 22.2448 84.8 21.8042 84.8 21.4615ZM81.9893 20.5315H73.0365C74.0255 18.3776 76.2637 17.2517 78.0334 17.2517C80.0113 17.2517 81.677 18.6224 81.9893 20.5315Z"
+                                            fill="white"></path>
+                                    </svg></button></div>
+                        </div>
+                    </div>
+                    <div style="position: relative; height: 788.438px;">
+                        <div>
+                            <div>
+                                <div role="main" class="login_wrapper">
+                                    <form class="login">
+                                        <h1 class="hero-700">Log in to My Cineworld</h1>
+                                        <div class="login-field" aria-label="Enter username"><label for="username">
+                                                <p id="username-label" class="paragraph-500">Email address</p><input
+                                                    name="username" type="text" aria-labelledby="username-label"
+                                                    autocomplete="username" value>
+                                            </label></div>
+                                        <div class="login-field" aria-label="Enter password"><label for="password">
+                                                <p id="password-label" class="paragraph-500">Password</p>
+                                                <div class="password_input"><input name="password"
+                                                        aria-labelledby="password-label" autocomplete="current-password"
+                                                        type="password" value><button type="button"
+                                                        class="password_input-toggle"><svg width="22" height="16"
+                                                            viewBox="0 0 22 16" fill="BAB8B8"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                                                d="M11 0.5C6 0.5 1.73 3.61 0 8C1.73 12.39 6 15.5 11 15.5C16 15.5 20.27 12.39 22 8C20.27 3.61 16 0.5 11 0.5ZM11 13C8.24 13 6 10.76 6 8C6 5.24 8.24 3 11 3C13.76 3 16 5.24 16 8C16 10.76 13.76 13 11 13ZM11 5C9.34 5 8 6.34 8 8C8 9.66 9.34 11 11 11C12.66 11 14 9.66 14 8C14 6.34 12.66 5 11 5Z"
+                                                                fill="BAB8B8"></path>
+                                                        </svg></button></div>
+                                            </label></div>
+                                        <div class="btn-wrapper"><button type="submit"
+                                                class="button button-default undefined button-size-normal button-color-primary">
+                                                <div style="opacity: 1;">Log In</div>
+                                            </button></div>
+                                        <div class="login-links">
+                                            <p class="register-link">Not yet a member? Want to be able to refund your
+                                                tickets, book faster, and receive exclusive offers? &nbsp;<button
+                                                    class="login__link-button"><b style="opacity:0.9">Join for
+                                                        free</b></button></p>
+                                            <p class="forgot-password-link descriptor"><b style="opacity:1">Forgot
+                                                    Password?</b>&nbsp;<button class="login__link-button"><b
+                                                        style="opacity:0.9"><a
+                                                            href="https://experience.cineworld.co.uk/reset-password-request">Reset
+                                                            it</a></b></button></p>
+                                        </div>
+                                        <div class="divider">
+                                            <p>or</p>
+                                        </div>
+                                        <div>
+                                            <div class="login-social"><button type="button"
+                                                    class=" facebook button button-default social_signon button-size-normal button-color-light">
+                                                    <div style="opacity: 1;"><svg class="social_signon-icon"
+                                                            width="36px" height="36px" viewBox="0 0 36 36"
+                                                            fill="#FFFFFF">
+                                                            <path
+                                                                d="M36,18.1100575 C36,8.10814157 27.9411328,0 18,0 C8.05886719,0 0,8.10814157 0,18.1100575 C0,27.1493107 6.58233984,34.6414981 15.1875,36 L15.1875,23.344996 L10.6171875,23.344996 L10.6171875,18.1100575 L15.1875,18.1100575 L15.1875,14.1201855 C15.1875,9.5813523 17.8747734,7.07424121 21.9863672,7.07424121 C23.9557148,7.07424121 26.015625,7.42795327 26.015625,7.42795327 L26.015625,11.8847252 L23.7458672,11.8847252 C21.5098242,11.8847252 20.8125,13.2807206 20.8125,14.7129008 L20.8125,18.1100575 L25.8046875,18.1100575 L25.0066406,23.344996 L20.8125,23.344996 L20.8125,36 C29.4176602,34.6414981 36,27.1493107 36,18.1100575">
+                                                            </path>
+                                                        </svg>Continue with Facebook</div>
+                                                </button></div>
+                                        </div>
+                                        <div class="captcha">This site is protected by reCAPTCHA and the Google<a
+                                                href="https://policies.google.com/privacy" tabindex="0"
+                                                target="_blank">Privacy Policy</a> and<a
+                                                href="https://policies.google.com/terms" tabindex="0"
+                                                target="_blank">Terms
+                                                of Service</a> apply.</div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div role="log" aria-live="assertive"
+                        style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; white-space: nowrap; padding: 0px; width: 1px; position: absolute;">
+                    </div>
+                    <div role="log" aria-live="assertive"
+                        style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; white-space: nowrap; padding: 0px; width: 1px; position: absolute;">
+                    </div>
+                    <div role="log" aria-live="polite"
+                        style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; white-space: nowrap; padding: 0px; width: 1px; position: absolute;">
+                    </div>
+                    <div role="log" aria-live="polite"
+                        style="border: 0px; clip: rect(0px, 0px, 0px, 0px); height: 1px; margin: -1px; overflow: hidden; white-space: nowrap; padding: 0px; width: 1px; position: absolute;">
+                    </div>
+                </div>
+            </div>
+            <div class="abv-footer">
+                <p></p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
